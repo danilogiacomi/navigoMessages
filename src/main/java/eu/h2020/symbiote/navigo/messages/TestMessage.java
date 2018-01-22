@@ -11,7 +11,7 @@ public class TestMessage {
     @JsonProperty
     private String portID;
 
-
+    @JsonCreator
     public TestMessage(String yId, String pId){
 	this.yachtID = yId;
 	this.portID = pId;
