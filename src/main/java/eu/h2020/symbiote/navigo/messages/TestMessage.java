@@ -12,7 +12,7 @@ public class TestMessage {
     private String portID;
 
     @JsonCreator
-    public TestMessage(String yId, String pId){
+    public TestMessage(@JsonProperty("yacthID") String yId, @JsonProperty("portID")String pId){
 	this.yachtID = yId;
 	this.portID = pId;
     }
