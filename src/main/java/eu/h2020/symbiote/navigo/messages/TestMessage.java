@@ -5,16 +5,27 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 
 public class TestMessage {
 
-    @JsonProperty
+    @JsonProperty("yachtID")
     private String yachtID;
 
-    @JsonProperty
+    @JsonProperty("portID")
     private String portID;
 
     @JsonCreator
     public TestMessage(@JsonProperty("yacthID") String yId, @JsonProperty("portID") String pId){
 	this.yachtID = yId;
 	this.portID = pId;
+    }
+
+
+    @JsonProperty("yachtID")
+    public String getYachtID() {
+        return yachtID;
+    }
+    
+    @JsonProperty("portID")
+    public Resource getPortID() {
+        return portID;
     }
 
 }
