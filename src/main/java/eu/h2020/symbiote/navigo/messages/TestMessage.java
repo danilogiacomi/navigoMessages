@@ -24,7 +24,7 @@ public class TestMessage {
     }
     
     @JsonProperty("portID")
-    public Resource getPortID() {
+    public String getPortID() {
         return portID;
     }
 
