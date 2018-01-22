@@ -28,6 +28,9 @@ public class TestMessage {
         return portID;
     }
 
+    public String toString(){
+        return "Yacht : " + yachtID + " Port: " + portID;
+    }
 }
 
 
