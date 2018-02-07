@@ -9,7 +9,7 @@ public class ASCCheckYachtNeedsMessage {
     private String yachtID;
 
     @JsonCreator
-    public ASCCheckYachtNeedsMessage(@JsonProperty("yacthID") String yId){
+    public ASCCheckYachtNeedsMessage(@JsonProperty("yachtID") String yId){
 	this.yachtID = yId;
     }
 
