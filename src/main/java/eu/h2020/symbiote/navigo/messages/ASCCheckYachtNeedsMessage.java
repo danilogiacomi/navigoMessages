@@ -8,17 +8,25 @@ public class ASCCheckYachtNeedsMessage {
     @JsonProperty("yachtID")
     private String yachtID;
 
-    @JsonCreator
-    public ASCCheckYachtNeedsMessage(@JsonProperty("yachtID") String yId){
-	this.yachtID = yId;
-    }
+    @JsonProperty("callbackUrl")
+    private String callbackUrl;
 
+    @JsonCreator
+    public ASCCheckYachtNeedsMessage(@JsonProperty("yachtID") String yId, @JsonProperty("callbackUrl") String cUrl){
+        this.yachtID = yId;
+        this.callbackUrl = cUrl;
+    
+    }
 
     @JsonProperty("yachtID")
     public String getYachtID() {
         return yachtID;
     }
     
+    @JsonProperty("callbackUrl")
+    public String getCallbackUrl() {
+        return callbackUrl;
+    }
 
     public String toString(){
         return "Yacht : " + yachtID ;
