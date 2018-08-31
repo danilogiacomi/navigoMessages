@@ -3,7 +3,7 @@ package eu.h2020.symbiote.navigo.messages;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 
-public class PortnetwaitForYachtArrivalMessage {
+public class PortnetWaitForYachtArrivalMessage {
 
     @JsonProperty("yachtID")
     private String yachtID;
@@ -12,7 +12,7 @@ public class PortnetwaitForYachtArrivalMessage {
     private String callbackUrl;
 
     @JsonCreator
-    public PortnetwaitForYachtArrivalMessage(@JsonProperty("yachtID") String yId, @JsonProperty("callbackUrl") String cUrl){
+    public PortnetWaitForYachtArrivalMessage(@JsonProperty("yachtID") String yId, @JsonProperty("callbackUrl") String cUrl){
         this.yachtID = yId;
         this.callbackUrl = cUrl;
     
