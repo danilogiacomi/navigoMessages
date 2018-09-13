@@ -11,12 +11,9 @@ public class PortnetCheckSSPMessage {
     
     @JsonCreator
     public PortnetCheckSSPMessage(
-            @JsonProperty("SSPID") String sId,
-        ){
-        this.yachtID = yId;
-        this.callbackUrl = cUrl;
+            @JsonProperty("SSPID") String sId
+    ){
         this.SSPID = sId;
-        this.pierID = pId;
     }
 
     @JsonProperty("SSPID")
