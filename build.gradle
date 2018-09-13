@@ -69,7 +69,7 @@ dependencies {
 
 	compile('com.fasterxml.jackson.core:jackson-annotations:2.8.7+')
 	// compile('com.github.symbiote-h2020:SymbIoTeLibraries:3.0.0') { changing = true }
-	compile('com.github.symbiote-h2020:SymbIoTeLibraries:5.0.0+') { changing = true }
+	compile('com.github.symbiote-h2020:SymbIoTeLibraries:5.27.2+') { changing = true }
 	
 	
     // common testing
